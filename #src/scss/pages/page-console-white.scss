@@ -1,0 +1,457 @@
+@import "../default/_my__font";
+@import "../default/_my__color_white";
+
+.console {
+	&-bg {
+		background-color: $dark-blue-1;
+		& section:nth-child(2) {
+			background-color: $white;
+		}
+	}
+	&-container {
+		&.p-bg:before {
+			@media screen and (max-width: 768px) {
+				background-color: rgba(11, 11, 23, 0.5);
+			}
+		}
+		& .header {
+			&-console {
+				background-color: $blue-5;
+				@media screen and (max-width: 768px) {
+					background-color: $blue-5;
+				}
+				& .item-mob {
+					@media screen and (max-width: 768px) {
+						color: $white;
+					}
+				}
+			}
+			&-box {
+				@media screen and (max-width: 768px) {
+					background: $blue-6;
+				}
+				& > span {
+					border-right: 1px solid $grey-3;
+				}
+			}
+			&-balance {
+				color: $white;
+			}
+			&-menu {
+				& .balance {
+					border-bottom: 1px solid rgba(206, 206, 206, 0.2);
+				}
+				& .header-menu-item {
+					color: $white;
+					@media screen and (max-width: 768px) {
+						&:nth-child(3),
+						&:nth-child(2) {
+							& div:first-child {
+								border-bottom: 1px solid rgba(206, 206, 206, 0.2);
+							}
+						}
+						&:last-child {
+							& div:first-child {
+								border-bottom: 1px solid rgba(206, 206, 206, 0.2);
+							}
+						}
+					}
+				}
+				& .drop-down {
+					background-color: $blue-4;
+					box-shadow: 0 4px 4px #24233D;
+					@media screen and (max-width: 768px) {
+						box-shadow: 0 4px 4px #24233D;
+					}
+					& a {
+						color: $grey-2;
+					}
+					& > a {
+						&:hover {
+							background-color: #1869e1;
+						}
+					}
+					& ul li {
+						&:hover {
+							background-color: #1869e1;
+						}
+					}
+				}
+			}
+		}
+		& .table {
+			&-trade {
+				background-color: $white;
+			}
+			&-popular {
+				background-color: $white;
+			}
+			&-wrapper {
+				&::-webkit-scrollbar {
+					background-color: transparent;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: $blue-3;
+				}
+			}
+			&-history {
+				background-color: $white;
+				& .no-open {
+					background: $white;
+					& .no-open-orders {
+						& p {
+							color: $grey-2;
+						}
+					}
+				}
+				&__mob {
+					@media screen and (max-width: 768px) {
+						& .no-open {
+							background: $white;
+							@media screen and (max-width: 768px) {
+								& li {
+									background:$white;
+								}
+							}
+							& .no-open-orders {
+								& p {
+									color: $grey-2;
+								}
+							}
+						}
+					}
+					& .container-mob {
+						&.p-bg:before {
+							background-color: rgba(11, 11, 23, 0.5);
+						}
+					}
+				}
+				&-head {
+					background-color: $blue-5;
+					& > .head-title {
+						color: $grey-2;
+						& .tab-nav {
+							&.active {
+								color: $white;
+							}
+						}
+						& .btn-table-settings {
+							&:hover {
+								background-color: #0c3472;
+							}
+							&.active {
+								background-color: #0c3472;
+							}
+						}
+						& .drop-settings {
+							&-list {
+								background-color: $blue-1;
+							}
+						}
+					}
+					&__mob {
+						background-color: $blue-5;
+						& .head-title {
+							color: $grey-2;
+						}
+					}
+					&-settings__mob {
+						background: $blue-5;
+						& .tabs {
+							& .open-drop-tab__mob {
+								color: $grey-2;
+								&.active .container-mob {
+									&:before {
+										background-color: rgba(11, 11, 23, 0.5);
+									}
+								}
+							}
+							& .drop-tab__mob {
+								box-shadow: 0 4px 4px #24233D;
+								background-color: $purple-2;
+								& .nav-tab__mob {
+									color: $grey-2;
+									&.active {
+										background-color: $purple-1;
+									}
+								}
+							}
+						}
+						& .settings__mob {
+							& .drop-settings {
+								background: $dark-blue-2;
+							}
+						}
+					}
+				}
+				&-body {
+					&::-webkit-scrollbar {
+						background-color: transparent;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: $blue-3;
+					}
+					&__mob {
+						background: $white;
+					}
+					&-row {
+						border-bottom: 1px solid $grey-3;
+						color: $grey-2;
+						&:first-child {
+							background-color: $blue-5;
+							border-top: 1px solid $grey-3;
+							& td {
+								border-right: 1px solid $grey-3;
+							}
+						}
+						& td {
+							color: $white;
+						}
+					}
+					&-item {
+						border-bottom: 1px solid #D8E1EB;
+						&__mob {
+							& div {
+								color: #302F52;
+								border-bottom: 1px solid rgba(216, 225, 235, 0.24);
+								&:last-of-type {
+									border-bottom: 1px solid #D8E1EB;
+								}
+								&:first-of-type {
+									& span {
+										color: #302F52;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&-head {
+				background-color: $blue-5;
+				& button {
+					&:hover {
+						background-color: #092d62;
+					}
+				}
+				&-text {
+					color: $grey-2;
+				}
+				&-select {
+					& > .select {
+						color: $grey-2;
+					}
+					& .select-drop {
+						box-shadow: 0 4px 4px #24233D;
+						background-color: $blue-4;
+						@media screen and (max-width: 768px) {
+							background-color: $blue-4;
+						}
+						&::-webkit-scrollbar {
+							background-color: transparent;
+						}
+						&::-webkit-scrollbar-thumb {
+							background-color: $blue-3;
+						}
+						&-item {
+							color: $grey-2;
+							&:hover {
+								background-color: #1869e1;
+							}
+						}
+					}
+				}
+				&-bid {
+					color: $grey-2;
+				}
+				&-ask {
+					color: $grey-2;
+				}
+			}
+			&-body {
+				&::-webkit-scrollbar {
+					background-color: transparent;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: $blue-3;
+				}
+				&-list {
+					&-item {
+						color: #302F52;
+					}
+				}
+				&-item {
+					border-bottom: 1px solid #D8E1EB;
+					&.create-set {
+						& input {
+							border-bottom: 1px solid #D8E1EB;
+							color: #302F52;
+							&::placeholder {
+								color: #302F52;
+							}
+						}
+					}
+				}
+				&-name {
+					color: #302F52;
+				}
+				&-bid {
+					&.red {
+						color: $red-2;
+					}
+					&.green {
+						color: $green-2;
+					}
+				}
+				&-ask {
+					&.red {
+						color: $red-2;
+					}
+					&.green {
+						color: $green-2;
+					}
+				}
+			}
+		}
+	}
+}
+.mob-menu {
+	background-color: $blue-6;
+	box-shadow: 0 4px 4px #24233D;
+	&-item {
+		&:nth-child(2) {
+			& svg path:nth-child(3) {
+				fill: $blue-5;
+			}
+		}
+		&:hover {
+			background-color: $white;
+			& svg path {
+				fill: $blue-5;
+				stroke: $blue-5;
+			}
+		}
+		&:nth-child(2):hover svg path:nth-child(3) {
+			fill: $blue-5;
+		}
+		&.active {
+			background-color: $white;
+			& svg path {
+				fill: $blue-5;
+				stroke: $blue-5;
+			}
+		}
+		&:nth-child(2).active svg path:nth-child(3) {
+			fill: $white;
+		}
+	}
+}
+.footer-graphic {
+	& .selected-value {
+		background: $blue-5;
+		&-item {
+			&:hover {
+				background: $grey-2;
+				& span {
+					color: $purple-2;
+				}
+				& svg {
+					& path {
+						fill: $purple-2;
+					}
+				}
+			}
+			& span {
+				color: $grey-2;
+			}
+		}
+	}
+}
+.wrapper-buttons-count {
+	& input {
+		color: $grey-2;
+		border-bottom: 1px solid $grey-2;
+	}
+	& button {
+		color: $grey-2;
+	}
+}
+.blue-bg {
+	background: rgba(48, 47, 82, 0.7);
+}
+.popUp {
+	&-pay {
+		box-shadow: 0 4px 4px #24233D;
+		background: $dark-blue-2;
+	}
+	&-info {
+		&-item {
+			border-bottom: 1px solid $grey-3;
+			& span {
+				color: $white;
+			}
+			&:last-child {
+				@media screen and (max-width: 580px) {
+					border-bottom: 1px solid $grey-3;
+				}
+			}
+		}
+	}
+	&-form {
+		background: rgba(206, 206, 206, 0.07);
+		border: 1px solid $grey-3;
+		&-item {
+			border-bottom: 1px solid $grey-3;
+			& div:first-of-type {
+				color: $white;
+			}
+			& .wrapper-buttons-count {
+				& p {
+					color: $white;
+				}
+			}
+		}
+	}
+	&-title {
+		& div {
+			color: $white;
+		}
+	}
+	&-footer {
+		& span {
+			color: $white;
+		}
+		& .drop-select {
+			&-hour {
+				border: 1px solid $grey-3;
+			}
+			&-btn {
+				border-left: 1px solid $grey-3;
+				&:hover {
+					background-color: #0a306a;
+				}
+			}
+			&-list {
+				border: 1px solid $grey-3;
+				background-color: #0a306a;
+			}
+			&-item {
+				color: $white;
+				&:hover {
+					background-color: #0a306a;
+				}
+			}
+		}
+	}
+}
+.check-box label {
+	color: #181733;
+}
+.check-box label:before {
+	border-bottom: 2px solid $white;
+	border-left: 2px solid $white;
+}
+.check-box input:disabled+label:after {
+	border-color: transparent;
+	background-color: rgba(23, 98, 210, 0.5);
+}

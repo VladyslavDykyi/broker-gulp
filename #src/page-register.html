@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<title>Broker</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/default/style.min.css">
+	<link rel="stylesheet" href="./css/pages/page-login.min.css">
+</head>
+
+<body>
+@@include('_header.html')
+<main class="bg-site">
+	<div class="box-container">
+		<div class="login-bg">
+			<h2 class="login-title t-sb t-1">Create your account</h2>
+			<form class="login-form" action="#">
+				<!-- Для показа в инпуте ошибки необходимо добавить класс error в инпут -->
+				<label class="login-form-label">
+					<input class="i-f2" name="name" type="text" placeholder="Name" required>
+				</label>
+				<label class="login-form-label">
+					<input class="i-f2" name="phone_number" type="text" placeholder="Phone number" required>
+				</label>
+				<label class="login-form-label">
+					<input class="i-f2" name="email" type="email" placeholder="Email" required>
+				</label>
+				<label class="login-form-label">
+					<input class="i-f2" name="password" type="password" placeholder="Password" required>
+				</label>
+				<label class="login-form-label">
+					<input class="i-f2" name="repeat_password" type="password" placeholder="Repeat password" required>
+				</label>
+				<p class="login-form-error t-r t-3">
+					The user with such mail is already created
+				</p>
+				<button class="btn btn-1">
+					Sing in
+				</button>
+			</form>
+			<p class="login-register t-r t-3">Already registered?
+				<a href="./index.html"> Click here to login</a>
+			</p>
+		</div>
+	</div>
+</main>
+
+<script src="./js/default/module-lc.min.js" type="module"></script>
+<script src="./js/pages/page-login.min.js" type="module"></script>
+
+</body>
+
+</html>

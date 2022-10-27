@@ -1,0 +1,41 @@
+.sidebar {
+	width: 100%;
+	max-width: 320px;
+	min-width: 320px;
+	height: calc(100vh - 100px);
+	position: fixed;
+	top: 100px;
+	left: 0;
+	@media screen and (max-width: 1440px) {
+		max-width: 250px;
+		min-width: 250px;
+	}
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+	&-nav {
+		height: 100%;
+		padding: 48px 60px 48px 48px;
+		background: #F5F9FF;
+		box-shadow: 3px 0 10px #EBEEF2;
+		@media screen and (max-width: 1440px) {
+			padding: 30px;
+		}
+	}
+	
+	&-list {
+		&-item {
+			margin-bottom: 20px;
+			& .btn {
+				&.active {
+					background: $orange;
+					color: $white;
+					& svg path  {
+						fill: $white;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,45 @@
+<section class="wrapper">
+	<div class="block-one">
+		<h2 class="t-sb t-2">
+			Withdraw
+		</h2>
+		<h3 class="t-sb t-3">
+			Choose a payment method
+		</h3>
+		<form class="form-withdraw" action="#">
+			<div class="form-withdraw-item">
+				<input type="radio" name="payment-method" id="card" checked>
+				<label for="card">
+					<span class="t-r t-6">Card</span>
+				</label>
+				<input type="radio" name="payment-method" id="btc">
+				<label for="btc">
+					<span class="t-r t-6">BTC</span>
+				</label>
+				<input type="radio" name="payment-method" id="usdt">
+				<label for="usdt">
+					<span class="t-r t-6">USDT(TRC - 20)</span>
+				</label>
+			</div>
+			<div class="form-withdraw-item">
+				<label class="t-r t-2" for="card-number">Card number</label>
+				<input class="i-f" id="card-number" name="card-number" type="text" placeholder="Placeholder text" required>
+			</div>
+			<div class="form-withdraw-item">
+				<label class="t-r t-2" for="withdrawal-amount">Withdrawal amount</label>
+				<input class="i-f" id="withdrawal-amount" name="withdrawal-amount" type="text" placeholder="Placeholder text" required>
+			</div>
+			<div class="form-withdraw-item">
+				<label class="t-r t-2" for="financial-password">Financial password</label>
+				<input class="i-f" id="financial-password" name="financial-password" type="text" placeholder="Placeholder text" required>
+			</div>
+			<!--	класс ерор добавляется при ошибки и начнет отображать крассный тект		-->
+			<div class="form-withdraw-btn error">
+				<p class="t-r t-3">Withdraw is only available to verified users</p>
+				<button class="btn btn-1" type="submit">
+					Withdraw
+				</button>
+			</div>
+		</form>
+	</div>
+</section>

@@ -1,0 +1,1221 @@
+<div class="table-history ">
+	<header class="table-history-head">
+		<div class="head-title">
+			<span class="tab-nav active">Trade</span>
+			<span class="tab-nav">Orders history</span>
+			<button class="reset-btn btn-table-settings" type="button">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M16.1453 4.14689C16.1917 4.10033 16.2469 4.06338 16.3076 4.03818C16.3684 4.01297 16.4335 4 16.4993 4C16.565 4 16.6301 4.01297 16.6909 4.03818C16.7516 4.06338 16.8068 4.10033 16.8532 4.14689L19.8531 7.14676C19.8997 7.1932 19.9366 7.24837 19.9618 7.30912C19.987 7.36986 20 7.43498 20 7.50074C20 7.56651 19.987 7.63162 19.9618 7.69237C19.9366 7.75311 19.8997 7.80828 19.8531 7.85473L9.85355 17.8543C9.80557 17.9019 9.74842 17.9394 9.68556 17.9643L4.68578 19.9642C4.59492 20.0006 4.49538 20.0095 4.39951 19.9898C4.30364 19.9701 4.21564 19.9228 4.14644 19.8536C4.07724 19.7844 4.02987 19.6964 4.0102 19.6005C3.99053 19.5046 3.99944 19.4051 4.0358 19.3142L6.03572 14.3144C6.06064 14.2516 6.09806 14.1944 6.14571 14.1465L16.1453 4.14689ZM15.2063 6.50078L17.4992 8.79368L18.7922 7.50074L16.4993 5.20784L15.2063 6.50078ZM16.7922 9.50065L14.4993 7.20775L7.99963 13.7075V14.0005H8.49961C8.63221 14.0005 8.75938 14.0531 8.85315 14.1469C8.94691 14.2407 8.99959 14.3678 8.99959 14.5004V15.0004H9.49957C9.63217 15.0004 9.75934 15.0531 9.8531 15.1469C9.94687 15.2406 9.99954 15.3678 9.99954 15.5004V16.0004H10.2925L16.7922 9.50065ZM7.03167 14.6754L6.92568 14.7814L5.39774 18.6023L9.21858 17.0743L9.32457 16.9683C9.2292 16.9327 9.14697 16.8688 9.0889 16.7852C9.03082 16.7015 8.99966 16.6022 8.99959 16.5003V16.0004H8.49961C8.36701 16.0004 8.23984 15.9477 8.14607 15.8539C8.05231 15.7602 7.99963 15.633 7.99963 15.5004V15.0004H7.49965C7.39784 15.0003 7.29847 14.9692 7.21484 14.9111C7.13121 14.853 7.06731 14.7708 7.03167 14.6754Z"
+						fill="#CECECE"/>
+				</svg>
+			</button>
+			<div class="drop-settings">
+				<ul class="drop-settings-list">
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="order" name="order" disabled>
+						<label for="order">Order</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="time" name="time" checked>
+						<label for="time">Time</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="volume" name="volume" checked>
+						<label for="volume">Volume</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="symbol" name="symbol" checked>
+						<label for="symbol">Symbol</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="open-price" name="open-price" checked>
+						<label for="open-price">Open price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="s-l" name="s-l" checked>
+						<label for="s-l">S/L</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="t-p" name="t-p" checked>
+						<label for="t-p">T/P</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="close-price" name="close-price" checked>
+						<label for="close-price">Close price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="current-price" name="current-price" checked>
+						<label for="current-price">Current price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="commission" name="commission" checked>
+						<label for="commission">Commission</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="swap" name="swap" checked>
+						<label for="swap">Swap</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit" name="profit" checked>
+						<label for="profit">Profit</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit-pips" name="profit-pips" checked>
+						<label for="profit-pips">Profit (pips)</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit-order" name="profit-order" checked>
+						<label for="profit-order">Profit (order)</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="comment" name="comment" checked>
+						<label for="comment">Comment</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="start-reason" name="start-reason" checked>
+						<label for="start-reason">Start reason</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="table-wrapper active">
+		<table class="table-history-body">
+			<tr class="table-history-body-row">
+				<td class="order">
+					Order
+				</td>
+				<td class="time">
+					Time
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					Volume
+				</td>
+				<td class="symbol">
+					Symbol
+				</td>
+				<td class="open-price">
+					Open price
+				</td>
+				<td class="s-l">
+					S/L
+				</td>
+				<td class="t-p">
+					T/P
+				</td>
+				<td class="close-price">
+					Close price
+				</td>
+				<td class="current-price">
+					Current price
+				</td>
+				<td class="commission">
+					Commission
+				</td>
+				<td class="swap">
+					Swap
+				</td>
+				<td class="profit">
+					Profit
+				</td>
+				<td class="profit-pips">
+					Profit (pips)
+				</td>
+				<td class="profit-order">
+					Profit (order)
+				</td>
+				<td class="comment">
+					Comment
+				</td>
+				<td class="start-reason">
+					Start reason
+				</td>
+			</tr>
+			<tr class="table-history-body-row no-open">
+				<td colspan="17">
+					<div class="no-open-orders">
+						<p>There are no open orders</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="table-wrapper">
+		<table class="table-history-body">
+			<tr class="table-history-body-row">
+				<td class="order">
+					Order
+				</td>
+				<td class="time">
+					Time
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					Volume
+				</td>
+				<td class="symbol">
+					Symbol
+				</td>
+				<td class="open-price">
+					Open price
+				</td>
+				<td class="s-l">
+					S/L
+				</td>
+				<td class="t-p">
+					T/P
+				</td>
+				<td class="close-price">
+					Close price
+				</td>
+				<td class="current-price">
+					Current price
+				</td>
+				<td class="commission">
+					Commission
+				</td>
+				<td class="swap">
+					Swap
+				</td>
+				<td class="profit">
+					Profit
+				</td>
+				<td class="profit-pips">
+					Profit (pips)
+				</td>
+				<td class="profit-order">
+					Profit (order)
+				</td>
+				<td class="comment">
+					Comment
+				</td>
+				<td class="start-reason">
+					Start reason
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					2
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+			<tr class="table-history-body-row">
+				<td class="order">
+					1
+				</td>
+				<td class="time">
+					14:22
+				</td>
+				<td class="type">
+					Type
+				</td>
+				<td class="volume">
+					2222
+				</td>
+				<td class="symbol">
+					2222
+				</td>
+				<td class="open-price">
+					2222
+				</td>
+				<td class="s-l">
+					2222
+				</td>
+				<td class="t-p">
+					2222
+				</td>
+				<td class="close-price">
+					2222
+				</td>
+				<td class="current-price">
+					2222
+				</td>
+				<td class="commission">
+					2222
+				</td>
+				<td class="swap">
+					2222
+				</td>
+				<td class="profit">
+					2222
+				</td>
+				<td class="profit-pips">
+					2222
+				</td>
+				<td class="profit-order">
+					2222
+				</td>
+				<td class="comment">
+					2222
+				</td>
+				<td class="start-reason">
+					2222
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="table-history__mob tab__mob">
+	<div class="table-history-head-settings__mob">
+		<div class="tabs">
+			<button class="open-drop-tab__mob reset-btn ">
+				Trade
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6.33672 9.27931C6.55001 9.10041 6.83852 9 7.13926 9C7.43999 9 7.72851 9.10041 7.94179 9.27931L12.0285 12.6796L16.0582 9.27931C16.2715 9.10041 16.56 9 16.8607 9C17.1615 9 17.45 9.10041 17.6633 9.27931C17.77 9.36861 17.8547 9.47484 17.9125 9.59189C17.9702 9.70894 18 9.83448 18 9.96129C18 10.0881 17.9702 10.2136 17.9125 10.3307C17.8547 10.4477 17.77 10.554 17.6633 10.6433L12.8367 14.7159C12.7309 14.8059 12.605 14.8774 12.4662 14.9261C12.3275 14.9749 12.1787 15 12.0285 15C11.8782 15 11.7294 14.9749 11.5907 14.9261C11.452 14.8774 11.3261 14.8059 11.2202 14.7159L6.33672 10.6433C6.23003 10.554 6.14534 10.4477 6.08755 10.3307C6.02976 10.2136 6 10.0881 6 9.96129C6 9.83448 6.02976 9.70894 6.08755 9.59189C6.14534 9.47484 6.23003 9.36861 6.33672 9.27931Z" fill="#CECECE"/>
+				</svg>
+			</button>
+			<ul class="drop-tab__mob">
+				<li class="nav-tab__mob active">Trade</li>
+				<li class="nav-tab__mob">Orders history</li>
+			</ul>
+		</div>
+		<div class="settings__mob">
+			<button class="reset-btn settings__mob-btn ">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14 18.3333C14 18.8638 13.7893 19.3725 13.4142 19.7475C13.0391 20.1226 12.5304 20.3333 12 20.3333C11.4696 20.3333 10.9609 20.1226 10.5858 19.7475C10.2107 19.3725 10 18.8638 10 18.3333C10 17.8029 10.2107 17.2942 10.5858 16.9191C10.9609 16.544 11.4696 16.3333 12 16.3333C12.5304 16.3333 13.0391 16.544 13.4142 16.9191C13.7893 17.2942 14 17.8029 14 18.3333ZM14 11.6667C14 12.1971 13.7893 12.7058 13.4142 13.0809C13.0391 13.456 12.5304 13.6667 12 13.6667C11.4696 13.6667 10.9609 13.456 10.5858 13.0809C10.2107 12.7058 10 12.1971 10 11.6667C10 11.1362 10.2107 10.6275 10.5858 10.2525C10.9609 9.87738 11.4696 9.66667 12 9.66667C12.5304 9.66667 13.0391 9.87738 13.4142 10.2525C13.7893 10.6275 14 11.1362 14 11.6667ZM14 5C14 5.53043 13.7893 6.03914 13.4142 6.41421C13.0391 6.78929 12.5304 7 12 7C11.4696 7 10.9609 6.78929 10.5858 6.41421C10.2107 6.03914 10 5.53043 10 5C10 4.46957 10.2107 3.96086 10.5858 3.58579C10.9609 3.21071 11.4696 3 12 3C12.5304 3 13.0391 3.21071 13.4142 3.58579C13.7893 3.96086 14 4.46957 14 5Z" fill="#CECECE"/>
+				</svg>
+			</button>
+			<div class="drop-settings">
+				<ul class="drop-settings-list">
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="order-mob" name="order" disabled>
+						<label for="order-mob">Order</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="time_mob" name="time" checked>
+						<label for="time_mob">Time</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="volume_mob" name="volume" checked>
+						<label for="volume_mob">Volume</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="symbol_mob" name="symbol" checked>
+						<label for="symbol_mob">Symbol</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="open-price_mob" name="open-price" checked>
+						<label for="open-price_mob">Open price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="s-l_mob" name="s-l" checked>
+						<label for="s-l_mob">S/L</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="t-p_mob" name="t-p" checked>
+						<label for="t-p_mob">T/P</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="close-price_mob" name="close-price" checked>
+						<label for="close-price_mob">Close price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="current-price_mob" name="current-price" checked>
+						<label for="current-price_mob">Current price</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="commission_mob" name="commission" checked>
+						<label for="commission_mob">Commission</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="swap_mob" name="swap" checked>
+						<label for="swap_mob">Swap</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit_mob" name="profit" checked>
+						<label for="profit_mob">Profit</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit-pips_mob" name="profit-pips" checked>
+						<label for="profit-pips_mob">Profit (pips)</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="profit-order_mob" name="profit-order" checked>
+						<label for="profit-order_mob">Profit (order)</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="comment_mob" name="comment" checked>
+						<label for="comment_mob">Comment</label>
+					</li>
+					<li class="drop-settings-item check-box">
+						<input type="checkbox" id="start-reason_mob" name="start-reason" checked>
+						<label for="start-reason_mob">Start reason</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-mob active">
+		<div class="table-history-head__mob">
+			<div class="head-title">
+				Trade
+			</div>
+		</div>
+		<ul class="table-history-body__mob no-open">
+			<li class="table-history-body-item__mob">
+				<div class="no-open-orders">
+					<p>There are no open orders</p>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="container-mob">
+		<div class="table-history-head__mob">
+			<div class="head-title">
+				Orders history
+			</div>
+		</div>
+		<ul class="table-history-body__mob">
+			<li class="table-history-body-item__mob">
+				<div class="order">
+					<span>#1</span>
+				</div>
+				<div class="time">
+					<span>Time</span><span>14:22</span>
+				</div>
+				<div class="type">
+					<span>Type</span><span>type</span>
+				</div>
+				<div class="volume">
+					<span>Volume </span><span>2222</span>
+				</div>
+				<div class="symbol">
+					<span>Symbol </span><span>2222</span>
+				</div>
+				<div class="open-price">
+					<span>Open price </span><span>2222</span>
+				</div>
+				<div class="s-l">
+					<span>S/L </span><span>2222</span>
+				</div>
+				<div class="t-p">
+					<span>T/P </span><span>2222</span>
+				</div>
+				<div class="close-price">
+					<span>Close price </span><span>2222</span>
+				</div>
+				<div class="current-price">
+					<span>Current price </span><span>2222</span>
+				</div>
+				<div class="commission">
+					<span>Commission </span><span>2222</span>
+				</div>
+				<div class="swap">
+					<span>Swap </span><span>2222</span>
+				</div>
+				<div class="profit">
+					<span>Profit </span><span>2222</span>
+				</div>
+				<div class="profit-pips">
+					<span>Profit (pips) </span><span>2222</span>
+				</div>
+				<div class="profit-order">
+					<span>Profit (order) </span><span>2222</span>
+				</div>
+				<div class="comment">
+					<span>Comment </span><span>2222</span>
+				</div>
+				<div class="start-reason">
+					<span>Start reason </span><span>2222</span>
+				</div>
+			</li>
+			<li class="table-history-body-item__mob">
+				<div class="order">
+					<span>#1</span>
+				</div>
+				<div class="time">
+					<span>Time</span><span>14:22</span>
+				</div>
+				<div class="type">
+					<span>Type</span><span>type</span>
+				</div>
+				<div class="volume">
+					<span>Volume </span><span>2222</span>
+				</div>
+				<div class="symbol">
+					<span>Symbol </span><span>2222</span>
+				</div>
+				<div class="open-price">
+					<span>Open price </span><span>2222</span>
+				</div>
+				<div class="s-l">
+					<span>S/L </span><span>2222</span>
+				</div>
+				<div class="t-p">
+					<span>T/P </span><span>2222</span>
+				</div>
+				<div class="close-price">
+					<span>Close price </span><span>2222</span>
+				</div>
+				<div class="current-price">
+					<span>Current price </span><span>2222</span>
+				</div>
+				<div class="commission">
+					<span>Commission </span><span>2222</span>
+				</div>
+				<div class="swap">
+					<span>Swap </span><span>2222</span>
+				</div>
+				<div class="profit">
+					<span>Profit </span><span>2222</span>
+				</div>
+				<div class="profit-pips">
+					<span>Profit (pips) </span><span>2222</span>
+				</div>
+				<div class="profit-order">
+					<span>Profit (order) </span><span>2222</span>
+				</div>
+				<div class="comment">
+					<span>Comment </span><span>2222</span>
+				</div>
+				<div class="start-reason">
+					<span>Start reason </span><span>2222</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

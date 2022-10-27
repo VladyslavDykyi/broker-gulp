@@ -1,0 +1,163 @@
+@import "../default/_my__color";
+@import "../default/_my__font";
+@import "_sidebar-lc";
+
+.block-all {
+	padding-bottom: 20px;
+	& > h2 {
+		color: $black;
+		margin-bottom: 32px;
+	}
+}
+
+.table {
+	width: 100%;
+	&-wrapper {
+		max-height: 420px;
+		overflow: hidden;
+		overflow-x: auto;
+		overflow-y: auto;
+		padding-bottom: 5px;
+		&::-webkit-scrollbar {
+			background-color: $blue-1;
+			border-radius: 8px;
+			width: 4px;
+			height: 4px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $blue-5;
+			border-radius: 6px;
+			height: 4px;
+		}
+		
+	}
+	
+	&-head {
+		&-row {
+			height: 36px;
+		}
+		
+		&-item {
+			
+			&:first-child div div {
+				width: 70px;
+				border-radius: 5px 0 0 0;
+			}
+			
+			&:last-child div div {
+				width: 261px;
+				border-radius: 0 5px 0 0;
+			}
+			
+			&:first-child > div {
+				border-radius: 5px 0 0 0;
+			}
+			
+			&:last-child > div {
+				border-radius: 0 5px 0 0;
+			}
+			
+			&:nth-child(2) div div {
+				width: 265px;
+			}
+			
+			&:nth-child(3) div div {
+				width: 284px;
+			}
+			
+			&:nth-child(4) div div {
+				width: 292px;
+			}
+			
+			&:nth-child(5) div div {
+				width: 284px;
+			}
+			
+			& div div {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				font-family: $O-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 130%;
+				color: $white;
+				padding: 0 16px;
+			}
+			
+			& > div {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				height: 38px;
+				width: 100%;
+				background: $blue-5;
+				border: 2px solid #F5F9FF;
+			}
+		}
+	}
+	
+	&-body {
+		&-row {
+		}
+		
+		&-item {
+			background: $blue-1;
+			
+			&:first-child div div {
+				width: 70px;
+			}
+			
+			&:last-child > div {
+				border-right: 2px solid $white;
+			}
+			&:first-child > div {
+				border-left: 2px solid $white;
+			}
+			
+			&:last-child div div {
+				width: 261px;
+			}
+			
+			&:nth-child(2) div div {
+				width: 269px;
+			}
+			
+			&:nth-child(3) div div {
+				width: 288px;
+			}
+			
+			&:nth-child(4) div div {
+				width: 292px;
+			}
+			
+			&:nth-child(5) div div {
+				width: 288px;
+			}
+			& > div {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				background: $blue-1;
+				border-top: 4px solid $white;
+				border-radius: 0;
+				width: 100%;
+				min-height: 37px;
+				height: 100%;
+			}
+			& div div {
+				
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				font-family: $O-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 130%;
+				color: $blue-5;
+				padding: 8px 16px;
+				word-break: break-all;
+			}
+		}
+	}
+}

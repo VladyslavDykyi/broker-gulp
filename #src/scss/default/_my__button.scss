@@ -1,0 +1,178 @@
+/*--- стили кнопок ---*/
+.reset-btn {
+	background-color: transparent;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+}
+.btn {
+	width: 100%;
+	padding: 0 17px;
+	border-radius: 500px;
+	border: none;
+	font-family: $O-r;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: capitalize;
+	position: relative;
+	cursor: pointer;
+	&.btn-1 {
+		height: 47px;
+		font-size: 18px;
+		line-height: 25px;
+		color: $white;
+		background-color: $blue-5;
+		&:hover {
+			background-color: $blue-4;
+		}
+		&:disabled {
+			color: $grey;
+			background-color: $white-2;
+		}
+	}
+	&.btn-2 {
+		height: 35px;
+		font-size: 14px;
+		line-height: 21px;
+		color: $white;
+		background-color: $blue-5;
+		&:hover {
+			background-color: $blue-4;
+		}
+		&:disabled {
+			color: $grey;
+			background-color: $white-2;
+		}
+	}
+	&.btn-3 {
+		height: 24px;
+		font-size: 12px;
+		line-height: 16px;
+		border: 1px solid $blue-2;
+		color: $blue-3;
+		background-color: $blue-1;
+		&:hover {
+			border-color: $blue-5;
+			background-color: $blue-5;
+			color: $white;
+		}
+		&:disabled {
+			border-color: $white-2;
+			color: $grey;
+			background-color: $white-2;
+		}
+	}
+	&.btn-4 {
+		height: 40px;
+		font-size: 18px;
+		line-height: 25px;
+		color: $blue-5;
+		background-color: $white;
+		&:hover {
+			background-color: $blue-4;
+			color: $white;
+		}
+		&:disabled {
+			color: $grey;
+			background-color: $white-2;
+		}
+	}
+	&.btn-5 {
+		height: 40px;
+		font-size: 18px;
+		line-height: 25px;
+		color: $white;
+		background-color: $orange;
+		&:hover {
+			background-color: $blue-4;
+			color: $white;
+		}
+		&:disabled {
+			color: $grey;
+			background-color: $white-2;
+		}
+	}
+	&.btn-6 {
+		font-size: 18px;
+		line-height: 25px;
+		color: $blue-5;
+		background: $white;
+		box-shadow: 0 4px 4px rgba(218, 226, 237, 0.25);
+		border-radius: 5px;
+		position: relative;
+		padding: 10px 12px 10px 56px;
+		justify-content: flex-start;
+		&:hover {
+			background-color: $blue-4;
+			color: $white;
+			& svg path  {
+				fill: $white;
+			}
+		}
+		&:active {
+			background: $orange;
+			color: $white;
+			& svg path  {
+				fill: $white;
+			}
+		}
+		& svg {
+			position: absolute;
+			top: calc(50% - 12px);
+			left: 12px;
+		}
+	}
+	&.btn-7 {
+		max-width: 130px;
+		height: 29px;
+		background: rgba(222, 37, 37, 0.5);
+		border-radius: 5px;
+		font-size: 16px;
+		line-height: 130%;
+		color: #FEFEFE;
+		&:hover {
+			background: #DE2525;
+		}
+		&:active {
+			background: #B71E1E;
+		}
+	}
+}
+.btn2 {
+	width: 100%;
+	padding: 0 24px;
+	border-radius: 5px;
+	border: none;
+	font-family: $I-r;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: $white;
+	height: 31px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	&.btn-2 {
+		background: $red-2;
+		&:hover {
+			background: $red-3;
+		}
+		&:active {
+			background: $red-4;
+			box-shadow: inset 0 4px 4px $red-5;
+		}
+	}
+	&.btn-3 {
+		background: $green-2;
+		&:hover {
+			background: $green-3;
+		}
+		&:active {
+			background: $green-4;
+			box-shadow: inset 0 4px 4px $green-5;
+		}
+	}
+}

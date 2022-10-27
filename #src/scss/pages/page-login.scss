@@ -1,0 +1,52 @@
+@import "../default/_my__font";
+@import "../default/_my__color";
+
+.login-bg {
+	margin: 159px auto 0;
+	width: 100%;
+	max-width: 352px;
+	background: $white;
+	box-shadow: 0 8px 10px #E1E7F0;
+	padding: 32px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media screen and (max-width: 1024px) {
+		padding: 15px;
+		margin: 100px auto 0;
+	}
+	@media screen and (max-width: 580px) {
+		max-width: 100%;
+	}
+}
+.login-title {
+	text-align: center;
+	color: $orange;
+}
+.login-form {
+	margin-top: 44px;
+	&-label {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&-error {
+		margin-top: 20px;
+		color: $red;
+	}
+	& .btn {
+		margin: 36px 0 24px;
+	}
+}
+
+.login-register {
+	text-align: center;
+	color: $blue-5;
+	& a {
+		color: $orange;
+	}
+}

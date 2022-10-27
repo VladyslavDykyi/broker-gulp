@@ -1,0 +1,77 @@
+@import "../default/_my__color";
+@import "../default/_my__font";
+@import "_sidebar-lc";
+
+.wrapper,
+.lc-bg-site {
+	@media screen and (max-height: 870px) {
+		height: auto;
+	}
+}
+
+.block-one {
+	width: 100%;
+	max-width: 560px;
+	@media screen and (max-width: 1024px) {
+		max-width: 100%;
+	}
+	& > h2 {
+		color: $black;
+		margin-bottom: 32px;
+	}
+	& .form-profile {
+		&-item {
+			margin-bottom: 20px;
+			&:first-child {
+				& label {
+					display: inline-flex;
+					flex-direction: row-reverse;
+					justify-content: flex-end;
+					cursor: pointer;
+				}
+				& input {
+					display: none;
+				}
+				& .avatar-placeholder {
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+					position: relative;
+					&:after {
+						content: "+";
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 24px;
+						height: 24px;
+						color: $white;
+						background-color: $blue-5;
+						border-radius: 50%;
+						font-size: 25px;
+					}
+					& img {
+						width: 100px;
+						height: 100px;
+						border-radius: 50%;
+						object-fit: cover;
+					}
+				}
+			}
+			& > label {
+				color: $blue-5;
+				margin-bottom: 8px;
+				display: inline-block;
+			}
+		}
+		
+		&-btn {
+			margin-top: 52px;
+			border-top: 1px solid $blue-5;
+			padding-top: 24px;
+		}
+	}
+}
